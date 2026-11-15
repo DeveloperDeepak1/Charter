@@ -273,7 +273,7 @@
                                     <p class="text-[13px] text-gray-500 mb-0.5">Starting Stop (Tap to change)</p>
                                     <i class="fa-solid fa-pencil text-gray-700 text-sm p-1 cursor-pointer" onclick="document.getElementById('edit-start').focus()"></i>
                                 </div>
-                                <input type="text" id="edit-start" class="editable-text text-[16px] text-gray-800 font-medium" value="Dabri Crossing Dwarka Road" placeholder="Enter starting stop">
+                                <input type="text" id="edit-start" class="editable-text text-[16px] text-gray-800 font-medium" value="Virender Nagar / Dilli Haat" placeholder="Enter starting stop">
                             </div>
                         </div>
 
@@ -282,7 +282,7 @@
                             <div class="flex-1 -mt-0.5">
                                 <p class="text-[13px] text-gray-500 mb-0.5">Ending Stop (Tap to change)</p>
                                 <div class="border border-gray-200 rounded-lg px-3 py-2 bg-white">
-                                    <input type="text" id="edit-end" placeholder="Enter ending stop" value="" class="w-full text-[15px] text-gray-800 outline-none placeholder-gray-400 bg-transparent border-none">
+                                    <input type="text" id="edit-end" placeholder="Enter ending stop" value="Meenakshi Garden" class="w-full text-[15px] text-gray-800 outline-none placeholder-gray-400 bg-transparent border-none">
                                 </div>
                             </div>
                         </div>
@@ -362,9 +362,9 @@
         </div>
         
         <!-- Header -->
-        <div class="flex justify-between items-center px-4 pt-3 pb-2 text-white">
-            <i class="fa-solid fa-xmark text-[22px] cursor-pointer" onclick="goToHome()"></i>
-            <div class="flex items-center gap-5 text-[14px] font-medium">
+        <div class="flex justify-between items-center px-3 pt-2 pb-2 text-white">
+            <i class="fa-solid fa-xmark text-[18px] cursor-pointer" onclick="goToHome()"></i>
+            <div class="flex items-center gap-3 text-[12px] font-medium">
                 <span class="flex items-center gap-2 text-yellow-300">
                     <i class="fa-solid fa-triangle-exclamation"></i> Issue with ticket?
                 </span>
@@ -373,70 +373,69 @@
         </div>
 
         <!-- Ticket Card -->
-        <div class="bg-white rounded-xl mx-4 mt-[120px] px-3 py-2.5 relative shadow-lg">
+        <div class="bg-white rounded-md mx-1 mt-[105px] px-3 pt-[18px] pb-[6px] relative shadow-lg leading-[1.2]">
             
             <!-- Transport Dept Header -->
-            <div class="text-center text-[#6b7280] font-medium text-[15px] mb-2">
+            <div class="text-center text-gray-900 font-medium text-[15px] mb-[10px]">
                 Transport Dept. of Delhi
             </div>
             
             <!-- Row 1 -->
-            <div class="flex justify-between items-center mb-2 border-b border-gray-200 pb-1">
-                <div id="conf-bus-no" class="text-gray-800 text-[16px]">DL1PD4831</div>
-                <div id="conf-final-fare" class="text-gray-800 text-[16px]">₹4.62</div>
+            <div class="flex justify-between items-center mb-[14px] border-b border-gray-300 pb-1">
+                <div id="conf-bus-no" class="text-gray-900 text-[16px]">DL1PD4831</div>
+                <div id="conf-final-fare" class="text-gray-900 text-[16px]">₹4.62</div>
             </div>
 
             <!-- Row 2 -->
-            <div class="flex justify-between items-start mb-3">
+            <div class="flex justify-between items-start mb-2">
                 <div>
-                    <div class="text-gray-400 text-[12px] mb-1">Bus Route</div>
-                    <div id="conf-route" class="text-[#6b7280] text-[15px]">801-IGI-IND</div>
-                    <div id="conf-towards" class="text-[#6b7280] text-[13px] mt-0.5">towards Inderlok Metro Station</div>
+                    <div class="text-gray-800 text-[12px] mb-0.5">Bus Route</div>
+                    <div id="conf-route" class="text-gray-900 text-[15px]">801-IGI-IND</div>
                 </div>
                 <div class="text-right">
-                    <div class="text-gray-400 text-[12px] mb-1">Base fare</div>
-                    <div id="conf-base-fare" class="text-[#6b7280] text-[15px]">₹5.0</div>
-                    <div id="conf-discount" class="text-gray-400 text-[11px] mt-0.5">10% off: ₹0.50</div>
+                    <div class="text-gray-800 text-[12px] mb-0.5">Fare</div>
+                    <div id="conf-base-fare" class="text-gray-900 text-[15px]">₹5.0</div>
                 </div>
             </div>
 
             <!-- Row 3 -->
-            <div class="flex justify-between items-start mb-3">
+            <div class="flex justify-between items-start mb-[11px]">
                 <div>
-                    <div class="text-gray-400 text-[12px] mb-1">Booking Time</div>
-                    <div id="conf-time" class="text-[#6b7280] text-[15px]">12 Nov, 26 | 02:55 PM</div>
+                    <div class="text-gray-800 text-[12px] mb-0.5">Booking Time</div>
+                    <div id="conf-time" class="text-gray-900 text-[15px]">12 Nov, 26 | 02:55 PM</div>
                 </div>
                 <div class="text-right">
-                    <div class="text-gray-400 text-[12px] mb-1">Tickets</div>
-                    <div id="conf-tickets" class="text-[#6b7280] text-[15px]">1</div>
+                    <div class="text-gray-800 text-[12px] mb-0.5">Tickets</div>
+                    <div id="conf-tickets" class="text-gray-900 text-[15px]">1</div>
                 </div>
             </div>
 
             <!-- Row 4 (Start Stop) -->
-            <div class="mb-3">
-                <div class="text-gray-400 text-[12px] mb-1">Starting stop</div>
-                <div id="conf-start" class="text-[#6b7280] text-[15px]">Virender Nagar / Dilli Haat</div>
+            <div class="mb-[5px]">
+                <div class="text-gray-800 text-[12px] mb-0.5">Starting stop</div>
+                <div id="conf-start" class="text-gray-900 text-[15px]">Virender Nagar / Dilli Haat</div>
             </div>
 
             <!-- Row 5 (End Stop) -->
-            <div class="mb-5">
-                <div class="text-gray-400 text-[12px] mb-1">Ending stop</div>
-                <div id="conf-end" class="text-[#6b7280] text-[15px]">Meenakshi Garden</div>
+            <div class="mb-[9px]">
+                <div class="text-gray-800 text-[12px] mb-0.5">Ending stop</div>
+                <div id="conf-end" class="text-gray-900 text-[15px]">Meenakshi Garden</div>
             </div>
 
             <!-- Transaction ID -->
-            <div class="text-center text-gray-400 text-[12px] mb-3" id="conf-txn-id">
+            <div class="text-center text-gray-500 text-[12px] mb-[6px]" id="conf-txn-id">
                 T1211202623ac359522
             </div>
 
             <!-- QR Button -->
-            <button type="button" onclick="showQRCode()" class="w-full bg-[#e8f5e9] text-[#2e7d32] rounded-lg py-2 flex items-center justify-center gap-2 font-medium text-[15px] mb-3">
+            <button type="button" onclick="showQRCode()" class="w-full bg-[#e8f5e9] border border-[#00a76f] text-[#2e7d32] rounded-md py-[7px] flex items-center justify-center gap-2 font-medium text-[15px] leading-normal mb-[21px]">
                 <i class="fa-solid fa-qrcode text-[18px]"></i> Show QR code
             </button>
 
             <!-- ONDC Footer -->
-            <div class="text-center text-[#475569] font-bold text-[14px] tracking-widest flex items-center justify-center gap-1">
-                ON<span class="text-blue-500">D</span>C NETWORK
+            <div class="flex items-center justify-center gap-2" aria-label="ONDC Network">
+                <img src="ondc-logo.png" alt="ONDC" class="block w-[76px] h-[24px] object-contain">
+                <span class="text-[#1e293b] font-bold text-[10px] tracking-[0.18em]">NETWORK</span>
             </div>
 
         </div>
@@ -625,20 +624,16 @@
             const route = document.getElementById('edit-route').value;
             const time = document.getElementById('current-datetime').value;
             const startStop = document.getElementById('edit-start').value;
-            const towards = document.getElementById('edit-towards').value.trim();
             const endStop = document.getElementById('edit-end').value.trim();
 
             // Format amounts
-            const displayBaseFare = globalBaseFareTotal.toFixed(2);
+            const displayBaseFare = globalBaseFareTotal.toFixed(2).replace(/0$/, '');
             const displayFinalFare = globalFinalFare.toFixed(2);
-            const displayDiscount = (globalBaseFareTotal - globalFinalFare).toFixed(2);
 
             // Populate confirmation screen
             document.getElementById('conf-bus-no').innerText = busNo;
             document.getElementById('conf-final-fare').innerText = '₹' + displayFinalFare;
             document.getElementById('conf-route').innerText = route;
-            document.getElementById('conf-towards').innerText = towards;
-            document.getElementById('conf-discount').innerText = '10% off: ₹' + displayDiscount;
             document.getElementById('conf-base-fare').innerText = '₹' + displayBaseFare;
             document.getElementById('conf-time').innerText = time;
             document.getElementById('conf-tickets').innerText = ticketCount;
